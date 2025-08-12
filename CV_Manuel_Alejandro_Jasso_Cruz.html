@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Manuel Alejandro Jasso Cruz</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+            padding: 20px;
+            font-size: 11pt;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #2c5aa0;
+            margin-bottom: 25px;
+        }
+        
+        .header h1 {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            font-size: 10pt;
+            color: #666;
+        }
+        
+        .contact-info span {
+            margin: 0 15px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section h2 {
+            font-size: 14pt;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 12px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid #ddd;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .summary {
+            text-align: justify;
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-size: 12pt;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .duration {
+            font-size: 10pt;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .company {
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 8px;
+        }
+        
+        .achievements {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .achievements li {
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+            text-align: justify;
+        }
+        
+        .achievements li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #2c5aa0;
+            font-weight: bold;
+        }
+        
+        .skills-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 10px;
+        }
+        
+        .skill-category h3 {
+            font-size: 11pt;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .skill-list {
+            list-style: none;
+            line-height: 1.4;
+        }
+        
+        .skill-list li {
+            margin-bottom: 3px;
+            padding-left: 12px;
+            position: relative;
+        }
+        
+        .skill-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #2c5aa0;
+        }
+        
+        .certifications {
+            margin-top: 10px;
+        }
+        
+        .cert-item {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .cert-title {
+            font-weight: bold;
+        }
+        
+        .cert-issuer {
+            color: #666;
+            font-size: 10pt;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+        
+        @media print {
+            body {
+                padding: 15mm;
+                font-size: 10pt;
+            }
+            
+            .container {
+                max-width: none;
+            }
+            
+            .section {
+                break-inside: avoid;
+                margin-bottom: 20px;
+            }
+            
+            .experience-item {
+                break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .job-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .skills-section,
+            .two-column {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .contact-info span {
+                display: block;
+                margin: 2px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Manuel Alejandro Jasso Cruz</h1>
+            <div class="contact-info">
+                <span>+52 5574352806</span>
+                <span>jassocruzma@gmail.com</span>
+                <span>linkedin.com/in/manuel-jasso</span>
+            </div>
+        </header>
+        
+        <section class="section">
+            <h2>Resumen Profesional</h2>
+            <div class="summary">
+                Estudiante de Ingeniería Industrial en la UNAM (9º semestre) con experiencia en gestión y optimización de campañas digitales en Meta Ads y Google Ads. Competente en análisis y visualización de datos con Looker Studio, Excel avanzado, SQL intermedio y Python. Experiencia en automatización de procesos, logrando reducir tiempos de publicación en 75%. Orientado al desarrollo de soluciones basadas en datos para la optimización de procesos y toma de decisiones estratégicas.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Experiencia Profesional</h2>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">Analista de Campañas Digitales</div>
+                    <div class="duration">Mar. 2021 – Jun. 2025</div>
+                </div>
+                <div class="company">Agencia de Consultoría Consultores Roldán</div>
+                <ul class="achievements">
+                    <li>Gestión y optimización de campañas publicitarias en Meta Ads y Google Ads para maximizar alcance e interacción</li>
+                    <li>Desarrollo de dashboards interactivos en Google Looker Studio y Octoboard para seguimiento de KPIs en tiempo real</li>
+                    <li>Análisis e integración de datos de bases de datos de ventas y plataformas publicitarias mediante SQL y Excel Avanzado</li>
+                    <li><strong>Diseño e implementación de sistema de nomenclatura estandarizado</strong> que redujo el tiempo de publicación de anuncios de 20 a 5 minutos (75% de mejora)</li>
+                    <li><strong>Automatización completa de informes de desempeño de campañas</strong> mediante la integración del sistema de nomenclatura con herramientas de visualización, eliminando procesos manuales</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">Colaborador en Proyectos</div>
+                    <div class="duration">2021 – Presente</div>
+                </div>
+                <div class="company">Fundación Andrick Jasso</div>
+                <ul class="achievements">
+                    <li>Detección de problemáticas públicas mediante visualización y análisis de datos</li>
+                    <li>Coordinación logística y ejecución de eventos benéficos de impacto comunitario</li>
+                    <li>Desarrollo de reportes sobre necesidades locales y seguimiento de resultados de intervenciones</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Educación</h2>
+            <div class="experience-item">
+                <div class="job-header">
+                    <div class="job-title">Ingeniería Industrial</div>
+                    <div class="duration">Ago. 2021 – Est. 2026</div>
+                </div>
+                <div class="company">Universidad Nacional Autónoma de México (UNAM) – Facultad de Ingeniería</div>
+                <div class="summary">
+                    Enfoque en optimización de procesos y análisis de datos aplicados a la ingeniería industrial. Especialización en investigación de operaciones y desarrollo de soluciones basadas en datos.
+                </div>
+            </div>
+        </section>
+
+        <div class="two-column">
+            <section class="section">
+                <h2>Habilidades Técnicas</h2>
+                <div class="skill-category">
+                    <h3>Marketing Digital</h3>
+                    <ul class="skill-list">
+                        <li>Meta Ads (Certificado)</li>
+                        <li>Google Ads</li>
+                        <li>Análisis de KPIs</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Análisis de Datos</h3>
+                    <ul class="skill-list">
+                        <li>Google Looker Studio</li>
+                        <li>SQL (Intermedio)</li>
+                        <li>Excel Avanzado</li>
+                        <li>Python (Introductorio)</li>
+                        <li>Octoboard</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Idiomas</h3>
+                    <ul class="skill-list">
+                        <li>Español (Nativo)</li>
+                        <li>Inglés (B1)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Certificaciones</h2>
+                <div class="certifications">
+                    <div class="cert-item">
+                        <span class="cert-title">Meta Ads Certification</span>
+                        <span class="cert-issuer">2024</span>
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-title">Google Looker Studio Avanzado</span>
+                        <span class="cert-issuer">2024</span>
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-title">SQL para Análisis de Datos</span>
+                        <span class="cert-issuer">2024</span>
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-title">Excel Avanzado</span>
+                        <span class="cert-issuer">2023</span>
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-title">Introducción a Python</span>
+                        <span class="cert-issuer">2025</span>
+                    </div>
+                    <div class="cert-item">
+                        <span class="cert-title">Fundamentos de Finanzas Empresariales</span>
+                        <span class="cert-issuer">2023</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <script>
+        // Función para imprimir el CV
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'p') {
+                e.preventDefault();
+                window.print();
+            }
+        });
+    </script>
+</body>
+</html>
